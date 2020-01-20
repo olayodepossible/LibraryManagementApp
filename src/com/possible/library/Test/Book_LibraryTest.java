@@ -1,9 +1,5 @@
 package com.possible.library.Test;
-/*
-import com.possible.library.Book;
-import com.possible.library.CustomHashMap;
-import com.possible.library.Library;
-import com.possible.library.LibraryUser;
+import com.possible.library.*;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -13,7 +9,7 @@ import java.util.HashSet;
 
 public class Book_LibraryTest {
    private Library library1 = new Library();
-   private LibraryUser user1 = new LibraryUser(123, "Ola", "Teacher", "12/01/2020");
+   private LibraryUser user1 = new Teacher();
     private Book book1 = new Book("Biology", "Yoisua", 3);
 
     private HashSet<LibraryUser> libraryUsers = new HashSet();
@@ -42,10 +38,11 @@ public class Book_LibraryTest {
         Assert.assertNotNull(book1);
     }
 
-    @Test
-    public void shouldReturnIsMember(){
-        Assert.assertEquals(user1, library1.getMember(123));
-    }
+//    @Test
+//    public void shouldReturnIsMember(){
+//        libraryUsers.add(user1);
+//        Assert.assertEquals(user1, library1.getMember(123));
+//    }
 
     @Test
     public void shouldReturnNoNumberOfCopies(){
@@ -53,4 +50,4 @@ public class Book_LibraryTest {
     }
 
 
-}*/
+}
